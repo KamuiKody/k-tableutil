@@ -8,15 +8,15 @@ end
 RegisterServerEvent("k-uitl:printVector", function(type, message, location, heading)
   file = io.open('tableutil.txt', "a")
   io.output(file)
-  if type == 'v3' then
+  if type == Config.Vector3 then
     output = parseV3(location)
-  elseif type == 'v4' then
+  elseif type == Config.Vector4 then
     output = parseV4(location, heading)
-  elseif type == 'next' then
+  elseif type == Config.Next then
     output = parseNext()
-  elseif type == 'end' then
+  elseif type == Config.End then
     output = parseEnd()
-  elseif type == 'start' then
+  elseif type == Config.Start then
     output = parseStart(message)
   end
   io.write(output)
