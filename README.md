@@ -12,3 +12,6 @@ command /tablenext takes no argument and will post an end bracket in the txt fil
 
 command /tableend takes no argument and will post an end bracket in the txt file that looke like this:
 	}
+
+
+*** Stevie was here *** :P
